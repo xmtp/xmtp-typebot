@@ -2,6 +2,8 @@
 
 This project enables conversational bots to interact with users via the XMTP decentralized messaging protocol. It uses Typebot as an example service but is designed to be extensible for other services like Intercom or Dialogflow.
 
+Typebot can be [self-hosted](https://docs.typebot.io/self-hosting/get-started), allowing you full control over your deployment and data.
+
 ## Requirements
 
 - `yarn` package manager version 2.x or 3.x or 4.x
@@ -41,7 +43,7 @@ Before starting the development setup, ensure you have a Postgres container runn
    Create a `.env` file in the root directory with the following variables:
    - `WALLET_KEY`: Your Ethereum wallet private key for XMTP authentication.
    - `XMTP_ENV`: The environment for the XMTP network (e.g., `development`).
-   - `TYPEBOT_PUBLIC_ID`: The public ID for your Typebot.
+   - `TYPEBOT_PUBLIC_ID`: The public ID for your Typebot. You can find instructions on how to locate your Typebot Public ID [here](https://docs.typebot.io/api-reference/how-to).
    - `POSTGRES_CONNECTION_STRING`: The URL for your production Postgres instance.
 
    Ensure `.env` is listed in your `.gitignore` to prevent exposing sensitive information.
