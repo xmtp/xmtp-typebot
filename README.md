@@ -6,7 +6,7 @@ Typebot can be [self-hosted](https://docs.typebot.io/self-hosting/get-started), 
 
 ## Requirements
 
-- `yarn` package manager version 2.x or 3.x or 4.x
+- `yarn` package manager version 2.x or 3.x or 4.x.
 - An Ethereum wallet private key for XMTP authentication. **Note:** The Ethereum wallet must already be activated on XMTP.
 - A Postgres container running in Docker
 
@@ -49,30 +49,28 @@ Before starting the development setup, ensure you have a Postgres container runn
    Ensure `.env` is listed in your `.gitignore` to prevent exposing sensitive information.
 
 4. **Development Commands**
+```bash
+# Update to yarn 4
+yarn set version stable
 
-   - To start the Docker container, run:
-     ```bash
-     docker-compose up -d
-     ```
+# Install dependencies
+yarn
 
-   - To compile TypeScript to JavaScript, run:
-     ```bash
-     yarn build
-     ```
-   - To start the application, use:
-     ```bash
-     yarn start
-     ```
-   - For development, you can watch for changes and automatically recompile:
-     ```bash
-     yarn build:watch
-     ```
-   - To run the application with automatic restarts on code changes, use:
-     ```bash
-     yarn start:watch
-     ```
+# Start the Docker container
+docker-compose up -d
 
-5. **Testing**
+# Compile TypeScript to JavaScript
+yarn build
+
+# Start the applicatio
+yarn start
+
+# For development, run with hot-reload
+yarn build:watch
+yarn start:watch
+```
+
+6. **Testing**
 
    Ensure your setup is correct by sending a message through an XMTP client to the wallet address associated with your private key. The bot should respond based on the Typebot configuration.
 
