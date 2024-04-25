@@ -1,0 +1,24 @@
+{
+  "name": "xmtp-typebot",
+  "version": "0.0.0-development",
+  "description": "Typebot integration with XMTP using Bot Kit Pro",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start:watch": "nodemon dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "@xmtp/bot-kit-pro": "^0.2.7",
+    "@xmtp/grpc-api-client": "^0.2.4",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.0"
+  }
+}
