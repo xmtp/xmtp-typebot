@@ -13,7 +13,7 @@ type TypebotMessage = {
   };
 };
 
-export class TypebotService implements IBotService {
+export class Typebot implements IBotService {
   private typebotPublicId: string;
 
   constructor(typebotPublicId: string) {
