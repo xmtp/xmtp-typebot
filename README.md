@@ -22,7 +22,7 @@ Before starting the development setup, ensure you have a Postgres container runn
 3. **Start a Postgres Instance**:
    - Execute the following command to start a new Postgres container:
      ```bash
-     docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+     docker run --name my-dev-db -e POSTGRES_PASSWORD=my-dev-password -d postgres
      ```
 
 ## Development Setup
