@@ -82,7 +82,7 @@ yarn start:watch
 
 2. **Deploy Railway Postgres Image**: Add Railways's [Postgres template](https://github.com/railwayapp-templates/postgres-ssl/pkgs/container/postgres-ssl) to your project and deploy it.
 
-3. **Configure Environment Variables**: In the Railway project settings for your GitHub repository, add the necessary [environment variables](#environment-variables).
+3. **Configure Environment Variables**: In the Railway project settings for your GitHub repository, add the necessary [environment variables](#environment-variables). **Note:** To use your Railway Postgres image, set `POSTGRES_CONNECTION_STRING` to `${{my-postgres-image.DATABASE_URL}}`.
 
 4. **Deploy**: Railway automatically deploys your application when you push changes to the connected GitHub repository. You can also trigger deployments manually via the Railway dashboard.
 
