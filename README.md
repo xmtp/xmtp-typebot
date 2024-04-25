@@ -62,7 +62,7 @@ docker-compose up -d
 # Compile TypeScript to JavaScript
 yarn build
 
-# Start the applicatio
+# Start the application
 yarn start
 
 # For development, run with hot-reload
