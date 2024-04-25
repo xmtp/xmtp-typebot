@@ -14,7 +14,7 @@ Typebot can be [self-hosted](https://docs.typebot.io/self-hosting/get-started), 
 
 Before starting the development setup, ensure you have a Postgres container running in Docker. Follow these steps to get it set up:
 
-1. **Install Docker Desktop**: Make sure you have Docker Desktop installed on your machine.
+1. **Install Docker Desktop**: Make sure you have [Docker Desktop](https://docs.docker.com/desktop/) installed on your machine.
 
 2. **Pull the Postgres Docker Official Image**:
    - Download the latest Postgres version by running `docker pull postgres` in your terminal.
