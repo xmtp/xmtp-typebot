@@ -1,3 +1,12 @@
+![Status](https://img.shields.io/badge/Deprecated-brown)
+
+> [!CAUTION]
+> This repo is no longer maintained.
+
+The documentation below is provided for historical reference only.
+
+---
+
 # XMTP Typebot Runner
 
 This project enables conversational bots to interact with users via the XMTP decentralized messaging protocol. It uses Typebot as an example service but is designed to be extensible for other services like Intercom or Dialogflow.
